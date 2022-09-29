@@ -4,12 +4,43 @@
     box-sizing: border-box;
 }
 
+body * {
+    font-family: 'Poppins';
+    line-height: 160%;
+}
+
 body {
     background-image: url(./assets/Fundo.jpg);
     background-position: top center;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #121214;
+}
+
+header {
+    margin-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #C91842 0%, #5CC2E2 100%);
+    border-radius: 50%;
+
+    display: flex;
+    padding: 4px;
+
+    transition: transform .3s;
+}
+
+header div:hover {
+    transform: scale(1.1);
+}
+
+header div img {
+    width: 100%;
+    border-radius: 50%;
 }
 
 main {
@@ -36,7 +67,9 @@ section div {
     border-radius: 8px;
 }
 
-section h2 {}
+section h2 {
+    letter-spacing: -0.50px;
+}
 
 section p {
     letter-spacing: -0.18px;
@@ -47,4 +80,30 @@ section ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    gap: 16px;
+
+    margin-top: 24px;
+}
+
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(1.1);
+}
+
+.films-list img {
+    width: 90px;
+    border-radius: 8px;
+  }
+  
+.series-list img {
+    border-radius: 8px;
+    width: 90px;
+}
+
+.animes-list img {
+    border-radius: 8px;
+    width: 90px;
 }
